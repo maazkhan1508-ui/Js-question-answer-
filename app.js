@@ -1,3 +1,8 @@
+
+
+
+
+
 // Assignment #5 — Math Expressions
 var num1 = 10;
 var num2 = 20;
@@ -137,3 +142,275 @@ document.write(
     " " + favoriteSnack +
     " to last you until the ripe old age of " + maximumAge + "."
 );
+
+
+
+
+
+// ========..=========..===========
+// Section 1: Variables & Data Types
+// =========. .======.  ==========
+
+// Q1
+let num1 = 10;
+let num2 = 20;
+console.log(num1 + num2);
+
+
+// Q2
+let name = "Maaz Khan";
+alert(name);
+
+
+// Q3
+let city = "Karachi";
+console.log(city);
+
+
+// Q4
+let age = 20;
+console.log(age);
+
+
+// Q5
+let number = 100;
+let string = "Hello JavaScript";
+let boolean = true;
+
+console.log(number);
+console.log(string);
+console.log(boolean);
+
+
+// Q6
+let price = 1500;
+alert(price);
+
+
+// ================================
+// Section 2: String Concatenation
+// ================================
+
+// Q7
+let firstName = "Maaz";
+let lastName = "Khan";
+
+let fullName = firstName + " " + lastName;
+console.log(fullName);
+
+
+// Q8
+console.log("5" + 5);
+// Output: 55
+
+
+// Q9
+let studentName = "Maaz";
+let course = "JavaScript";
+
+console.log(studentName + " is learning " + course);
+
+
+// Q10
+let userAge = 20;
+
+console.log("My age is " + userAge);
+
+
+// Q11
+let student = "Maaz";
+let subject = "JavaScript";
+let marks = 90;
+
+console.log(student + " is studying " + subject + " and got " + marks + " marks.");
+
+
+// ================================
+// Section 3: Pre-Increment / Post-Increment
+// ================================
+
+// Q12
+let a = 5;
+
+console.log(a++); // Output: 5
+console.log(a);   // Output: 6
+
+
+// Q13
+let b = 10;
+
+console.log(++b); // Output: 11
+console.log(b);   // Output: 11
+
+
+// Q14
+//Post-Increment (a++)
+// [Pehle old value use hoti hai, phir value +1 hoti hai.]
+
+// Pre-Increment (++a):
+// [Pehle value +1 hoti hai, phir new value use hoti hai.]
+
+
+// Q15
+let c = 0;
+
+c++;
+console.log(c); // 1
+
+c++;
+console.log(c); // 2
+
+c++;
+console.log(c); // 3
+
+
+// Q16
+let x = 15;
+
+console.log(x--);
+// Output: 15
+
+
+// Q17
+let y = 20;
+
+console.log(--y);
+// Output: 19
+
+
+// ========%===============%=======
+// Section 4: If / Else If / Else
+// =========%===============%======
+
+// Q18
+let marks1 = 95;
+
+if (marks1 > 90) {
+    console.log("A Grade");
+} else {
+    console.log("Try Again");
+}
+
+
+// Q19
+let age1 = 20;
+
+if (age1 > 18) {
+    console.log("Eligible");
+} else {
+    console.log("Not Eligible");
+}
+
+
+// Q20
+let number1 = 10;
+
+if (number1 > 0) {
+    console.log("Positive");
+} else {
+    console.log("Negative");
+}
+
+
+// Q21
+let temperature = 45;
+
+if (temperature > 40) {
+    console.log("Hot");
+} else {
+    console.log("Not Hot");
+}
+
+
+// Q22
+let day = 1;
+
+if (day === 1) {
+    console.log("Monday");
+} else {
+    console.log("Not Monday");
+}
+
+
+// Q23
+let score = 40;
+
+if (score < 50) {
+    console.log("Fail");
+} else {
+    console.log("Pass");
+}
+
+
+// Q24
+let x1 = 100;
+
+if (x1 === 100) {
+    console.log("Equal");
+} else {
+    console.log("Not Equal");
+}
+
+
+// Q25
+let salary = 60000;
+
+if (salary > 50000) {
+    console.log("High");
+} else {
+    console.log("Low");
+}
+
+
+// Q26
+let grade = "A";
+
+if (grade === "A") {
+    console.log("Excellent");
+} else {
+    console.log("Keep Trying");
+}
+
+
+// Q27
+let time = 15;
+
+if (time > 12) {
+    console.log("Afternoon");
+} else {
+    console.log("Morning");
+}
+
+
+// Q28
+let count = 0;
+
+if (count === 0) {
+    console.log("Empty");
+} else {
+    console.log("Not Empty");
+}
+
+
+// Q29
+let status = "active";
+
+if (status === "active") {
+    console.log("Running");
+} else if (status === "paused") {
+    console.log("On Hold");
+} else {
+    console.log("Stopped");
+}
+
+
+// Q30
+let level = 2;
+
+if (level === 1) {
+    console.log("Beginner");
+} else if (level === 2) {
+    console.log("Intermediate");
+} else {
+    console.log("Advanced");
+}
