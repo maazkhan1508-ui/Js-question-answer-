@@ -414,3 +414,157 @@ if (level === 1) {
 } else {
     console.log("Advanced");
 }
+
+
+
+
+// JS. ASSIGNMENT Q1 TO Q15
+
+// Q1. Declare an empty array using JS literal notation.
+var students1 = [];
+document.write("Q1: " + students1 + "<br><br>");
+
+// Q2. Declare an empty array using JS object notation.
+var students2 = new Array();
+document.write("Q2: " + students2 + "<br><br>");
+
+// Q3. Declare and initialize a strings array.
+var names = ["Ali", "Ahmed", "Usman"];
+document.write("Q3: " + names + "<br><br>");
+
+// Q4. Declare and initialize a numbers array.
+var numbers = [10, 20, 30, 40, 50];
+document.write("Q4: " + numbers + "<br><br>");
+
+// Q5. Declare and initialize a boolean array.
+var values = [true, false, true, false];
+document.write("Q5: " + values + "<br><br>");
+
+// Q6. Declare and initialize a mixed array.
+var mixed = ["Ali", 25, true, 50];
+document.write("Q6: " + mixed + "<br><br>");
+
+// Q7. Store education qualifications in an array.
+var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+document.write("Q7: Qualifications:<br><br>");
+
+for (var i = 0; i < qualifications.length; i++) {
+    document.write((i + 1) + ") " + qualifications[i] + "<br>");
+}
+document.write("<br>");
+
+// Q8. Store student names, scores and percentages.
+var studentNames = ["Michael", "John", "Tony"];
+var scores = [320, 230, 480];
+
+document.write("Q8:<br>");
+
+for (var j = 0; j < studentNames.length; j++) {
+    var percentage = (scores[j] / 500) * 100;
+    document.write("Score of " + studentNames[j] + " is " + scores[j] + ". Percentage: " + percentage + "%<br>");
+}
+document.write("<br>");
+
+// Q9. Initialize an array with color names.
+var colors = ["Red", "Green", "Blue"];
+document.write("Q9: Colors: " + colors + "<br><br>");
+
+// a. Add color at beginning.
+var firstColor = prompt("Enter color to add at beginning:");
+colors.unshift(firstColor);
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// b. Add color at end.
+var lastColor = prompt("Enter color to add at end:");
+colors.push(lastColor);
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// c. Add two more colors at beginning.
+colors.unshift("Yellow", "Orange");
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// d. Delete first color.
+colors.shift();
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// e. Delete last color.
+colors.pop();
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// f. Add color at user-defined index.
+var index = Number(prompt("Enter index:"));
+var colorName = prompt("Enter color name:");
+colors.splice(index, 0, colorName);
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// g. Delete colors from user-defined index.
+var deleteIndex = Number(prompt("Enter index to delete:"));
+var deleteCount = Number(prompt("How many colors to delete?"));
+colors.splice(deleteIndex, deleteCount);
+document.write("Updated Colors: " + colors + "<br><br>");
+
+// Q10. Sort student scores in ascending order.
+var studentScores = [320, 230, 480, 120];
+
+document.write("Scores of Students: " + studentScores + "<br>");
+
+studentScores.sort(function(a, b) {
+    return a - b;
+});
+
+document.write("Ordered Scores of Students: " + studentScores + "<br><br>");
+
+// Q11. Initialize cities array and copy 3 elements.
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+var selectedCities = cities.slice(2, 5);
+
+document.write("Cities list:<br>" + cities + "<br><br>");
+document.write("Selected cities list:<br>" + selectedCities + "<br><br>");
+
+// Q12. Create a single string using join() method.
+var arr = ["This", "is", "my", "cat"];
+var string = arr.join(" ");
+
+document.write("Array:<br>" + arr + "<br><br>");
+document.write("String:<br>" + string + "<br><br>");
+
+// Q13. FIFO (First In First Out).
+var devicesFIFO = [];
+
+devicesFIFO.push("keyboard");
+devicesFIFO.push("mouse");
+devicesFIFO.push("printer");
+devicesFIFO.push("monitor");
+
+document.write("Devices:<br>" + devicesFIFO + "<br><br>");
+document.write("Out:<br>" + devicesFIFO.shift() + "<br>");
+document.write("Out:<br>" + devicesFIFO.shift() + "<br>");
+document.write("Out:<br>" + devicesFIFO.shift() + "<br>");
+document.write("Out:<br>" + devicesFIFO.shift() + "<br><br>");
+
+// Q14. LIFO (Last In First Out).
+var devicesLIFO = [];
+
+devicesLIFO.push("keyboard");
+devicesLIFO.push("mouse");
+devicesLIFO.push("printer");
+devicesLIFO.push("monitor");
+
+document.write("Devices:<br>" + devicesLIFO + "<br><br>");
+document.write("Out:<br>" + devicesLIFO.pop() + "<br>");
+document.write("Out:<br>" + devicesLIFO.pop() + "<br>");
+document.write("Out:<br>" + devicesLIFO.pop() + "<br>");
+document.write("Out:<br>" + devicesLIFO.pop() + "<br><br>");
+
+// Q15. Phone manufacturers dropdown menu.
+var phones = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+document.write("Phone Manufacturers:<br>");
+document.write("<select>");
+
+for (var k = 0; k < phones.length; k++) {
+    document.write("<option>" + phones[k] + "</option>");
+}
+
+document.write("</select>");
+    
