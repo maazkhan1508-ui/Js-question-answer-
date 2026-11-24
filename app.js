@@ -567,4 +567,74 @@ for (var k = 0; k < phones.length; k++) {
 }
 
 document.write("</select>");
-    
+
+
+
+// Chapter 17 - 20: Arrays and Loop
+
+// Question 1
+var multiArr = [];
+
+// Question 2
+var matrix = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+];
+console.log(matrix);
+
+// Question 3
+for (var i = 1; i <= 10; i++) {
+    document.write(i + "<br>");
+}
+
+// Question 4
+var num = +prompt("Enter a number to show its multiplication table");
+var len = +prompt("Enter length multiplication table");
+
+document.write("Multiplication table of " + num + "<br>");
+document.write("Length " + len + "<br><br>");
+
+for (var i = 1; i <= len; i++) {
+    document.write(num + " x " + i + " = " + (num * i) + "<br>");
+}
+
+// Question 5
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+for (var i = 0; i < fruits.length; i++) {
+    document.write(fruits[i] + "<br>");
+}
+
+document.write("<br>");
+
+for (var i = 0; i < fruits.length; i++) {
+    document.write("Element at index " + i + " is " + fruits[i] + "<br>");
+}
+
+// Question 6
+document.write("<br><b>Counting:</b><br>");
+for (var i = 1; i <= 15; i++) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br><b>Reverse counting:</b><br>");
+for (var i = 10; i >= 1; i--) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br><b>Even:</b><br>");
+for (var i = 0; i <= 20; i += 2) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br><b>Odd:</b><br>");
+for (var i = 1; i <= 19; i += 2) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br><b>Series:</b><br>");
+for (var i = 2; i <= 20; i += 2) {
+    document.write(i + "k, ");
+}
+```[cite: 1, 2, 3]
